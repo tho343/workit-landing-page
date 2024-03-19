@@ -16,45 +16,75 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link src="./assets/css/styles.css" rel="stylesheet" />
+    <link href="./assets/css/styles.css" rel="stylesheet"/>
 
-    <title>Frontend Mentor | Workit landing page</title>
+    <title>Workit landing page</title>
   </head>
   <body>
-    <nav>
-      <div class="logo"></div>
-      <div class="cfa">Apply for access</div>
+    <nav class="d-flex justify-content-between align-items-center">
+      <div class="logo">
+        <img src="./assets/images/logo-light.svg" alt="logo of workit">
+      </div>
+      <a class="cfa" href="#"> Apply for access</a>
     </nav>
     <div class="content">
-      <div class="hero">
-        <h2>Data tailored to your needs.</h2>
-        <button>Learn more</button>
+      <div class="hero  d-flex flex-column align-items-center">
+        <h1>Data <span class="decorated">tailored</span> to <br/> your needs.</h2>
+        <button class="mt-4">Learn more</button>
+        <img class="img-fluid" src="./assets/images/image-hero.webp" alt="a mockup of mobile phone">
+        <img class="pattern one" src="./assets/images/bg-pattern-1.svg" alt="squirel"/>
+        <img class="pattern two" src="./assets/images/bg-pattern-2.svg" alt="squirel"/>
       </div>
-      <div class="properties">
-        <div class="prop">
-          1 Actionable insights Optimize your products, improve customer
-          satisfaction and stay ahead of the competition with our product data
-          analytics.
-        </div>
-        <div class="prop">
-          2 Data-driven decisions Make data-driven decisions with our product
-          data analytics. Our AI-generated reports help you unlock insights
-          hidden in your product data.
-        </div>
-        <div class="prop">
-          3 Always affordable Always affordable pricing that scales with your
-          business. Get top-quality product data analytics services without
-          hidden costs or unexpected fees.
-        </div>
+      <div class="properties d-flex align-items-center justify-content-center">
+        <ul class="d-flex align-items-start justify-content-between gap-4">
+          <li class="prop">
+            <span>1</span>
+            <div class="info">
+              <h3>Actionable insights</h3> <p>ptimize your products, improve customer
+                satisfaction and stay ahead of the competition with our product data
+                analytics.</p>
+            </div>
+          </li>
+          <li class="prop">
+            <span>2</span>
+            <div class="info">
+              <h3>Data-driven decisions</h3> <p>Make data-driven decisions with our product
+                data analytics. Our AI-generated reports help you unlock insights
+                hidden in your product data.</p>
+            </div>
+          </li>
+          <li class="prop">
+            <span>3</span>
+            <div class="info">
+              <h3>Always affordable </h3> <p>Always affordable pricing that scales with your
+                business. Get top-quality product data analytics services without
+                hidden costs or unexpected fees.</p>
+            </div>
+          </li>
+        </ul>
+       
       </div>
-      <div class="call-for-action">
-        Be the first to test Hi, I'm Louis Graham, the founder of the company.
-        Book a demo call with me to become a beta tester for our app and
-        kickstart your company. Apply for access below and I’ll be in touch to
-        schedule a call.
-        <button>Apply for access</button>
+      <div class="call-for-action d-flex align-items-center justify-content-center">
+        <div class="wrapper">
+          <img src="./assets/images/image-founder.webp"/>
+        <div class="banner">
+          <h2>Be the first to test </h2>
+          <p class="mt-4 mb-4">Hi, I'm Louis Graham, the founder of the company.
+            Book a demo call with me to become a beta tester for our app and
+            kickstart your company. Apply for access below and I’ll be in touch to
+            schedule a call.</p>
+        <button >Apply for access</button>
+        </div>
+        </div> 
       </div>
-      <footer></footer>
+      <footer class="d-flex align-items-center flex-column">
+        <img src="./assets/images/logo-dark.svg" alt="logo dark">
+        <ul class="d-flex align-items-center gap-3 mt-4 p-0 justify-content-center">
+          <li><img src="./assets/images/icon-facebook.svg" alt="icon of facebook"/></li>
+          <li><img src="./assets/images/icon-twitter.svg" alt="icon of facebook"/></li>
+          <li><img src="./assets/images/icon-instagram.svg" alt="icon of facebook"/></li>
+        </ul>
+      </footer>
     </div>
   </body>
 </html>
