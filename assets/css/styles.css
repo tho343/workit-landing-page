@@ -80,7 +80,7 @@ nav{
     width: 50%;
     position: relative;
     top:3.333rem;
-    
+    max-width: 1700px;
 }
 img.pattern{
     position: absolute;
