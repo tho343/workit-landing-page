@@ -1,0 +1,272 @@
+@font-face {
+    font-family: "Fraunces";
+    src: url(../fonts/fraunces/Fraunces-VariableFont_SOFT\,WONK\,opsz\,wght.ttf);
+}
+@font-face {
+    font-family: "Manrope";
+    src: url(../fonts/manrope/Manrope-VariableFont_wght.ttf);
+}
+:root{
+    --primary-color-- : #24053E;
+    --secondary-color1-- : #44FFA1;
+    --secondary-color2-- : #584D62;
+    --light-purple--     : #FCF8FF;
+    --white--              : #ffffff;
+    --px-1--                : 0.056rem;
+    --px-2--                : 0.111rem;
+    --px-3--                : 0.167rem;
+}
+body{
+    font-family: "Manrope";
+    font-size: 18px;
+    color: var(--primary-color--);
+    line-height: 1.778rem;
+    text-align: center;
+    
+}
+h1, h2, h3{
+    font-family: "Fraunces";
+    font-weight: 600;
+    font-size: 4.444rem;
+}
+h2{
+    font-size: 3.056rem;
+    line-height: 3.556rem;
+}
+h3{
+    font-size: 1.778rem;
+    line-height: 2.222rem;
+}
+button{
+    background-color: var(--secondary-color1--);
+    border: var(--px-2--) solid var(--secondary-color1--);
+    padding: 0.889rem 1.389rem ;
+    font-weight: 600;
+}
+button:hover{
+    background-color: transparent;
+    border: var(--px-2--) solid var(--secondary-color1--);
+    color: var(--secondary-color1--);
+}
+a{
+    text-decoration: none;
+    cursor: pointer;
+    border-bottom: var(--px-3--) solid var(--secondary-color1--);
+    color:var(--white--);
+    padding-bottom: var(--px-3--);
+}
+ul{
+    list-style: none;
+}
+/* ====== content ====== */
+.hero, nav{
+    color: var(--white--)!important;
+    background-color: var(--primary-color--);
+}
+nav{
+    padding: 3.333rem 9.167rem;
+}
+.hero{
+    border-radius: 0% 0% 80% 80%/0% 0% 20% 20%;
+    position:relative;
+}
+
+.hero img.img-fluid{
+    width: 50%;
+    position: relative;
+    top:3.333rem;
+    max-width: 1700px;
+}
+img.pattern{
+    position: absolute;
+    
+}
+.pattern.one{
+    left: -50px;
+    width: 25%;
+}
+.pattern.two{
+    right: 10px;
+    width: 15%;
+    bottom: 150px;
+}
+span.decorated{
+    border-bottom: var(--px-3--) solid var(--secondary-color1--);
+}
+.properties{
+    background-color: var(--light-purple--);
+    padding: 10rem 9.167rem;
+}
+.properties ul .prop >*{
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+}
+.prop span{
+    font-family: "Fraunces";
+    font-weight: 600;
+    font-size: 2rem;
+    border: solid var(--px-1--) var(--primary-color--);
+    padding: 0.3rem 0.9rem;
+    border-radius: 50%;
+}
+.properties ul{
+    max-width: 1500px;
+}
+.prop{
+    max-width: 400px;
+}
+.call-for-action{
+    padding: 10rem;
+    padding-bottom: 0;
+}
+.call-for-action img{
+    width: 40%;
+    transform: translate(-60%);
+    left: -50px;
+    max-width: 700px;
+}
+nav .wrapper{
+    position: relative;
+}
+.cfa span{
+    position:absolute;
+    top:0;
+    left:0;
+    overflow: hidden;
+    transform: translate(-100%);
+    transition: transform 275ms ease;
+}
+.cfa span::before{
+    display: inline-block;
+    content: attr(data-content);
+    color:var(--secondary-color1--);
+    z-index: 10000;
+    transform: translateX(100%);
+    transition: transform 275ms ease;
+
+}
+a:hover span{
+    transform: translateX(0);
+}
+
+a:hover span::before{
+    transform: translateX(0);
+}
+
+.banner{
+    background-color: var(--primary-color--);
+    color:var(--white--);
+    text-align: left;
+    padding: 3rem;
+    transform: translate(58%, -80%);
+    width: 60%;
+    max-width: 1000px;
+}
+footer{
+    padding: 3rem;
+}
+@media screen and (max-width: 992px){
+    .properties{
+        padding: 5rem 2rem;
+    }
+    .call-for-action{
+        padding: 5rem 2rem;
+    }
+    .banner{
+        transform: translate(58%, -20%);
+    }
+}
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 16px;
+    }
+    nav{
+        padding: 1.778rem 2.222rem;
+    }
+    .hero img.img-fluid{
+        width: 70%;
+        top:6rem; 
+    }
+    .pattern.one{
+        left: -250px;
+        width: 50%;
+    }
+    .properties{
+        padding: 6.125rem;
+    }
+    .properties ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .prop{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .prop .info{
+        text-align: start;
+    }
+    .call-for-action{
+        padding: 6.25rem 1.25rem;
+    }
+    .banner{
+        width: 70%;
+        transform: translate(40%, -25%); 
+    }
+}
+@media screen and (max-width: 375px) {
+    body{
+        font-size: 16px;
+        
+    }
+    nav{
+        padding: 2rem 1rem;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .hero img.img-fluid{
+        width: 90%;
+        top:6rem; 
+    }
+    .properties{
+        padding: 4.375rem 1rem;
+    }
+    .prop{
+        flex-direction: column;
+        align-items: center;
+        gap:1rem;
+    }
+    .prop .info{
+        text-align: center;
+    }
+    .properties ul .prop >* {
+        margin: 1rem 0;
+    }
+    .info h3 {
+        margin-bottom: 1rem;
+    }
+    .call-for-action{
+        padding: 1rem;
+    }
+    .call-for-action img{
+        width: 90%;
+        transform: translate(0px);
+    }
+    .banner{
+        padding:2rem;
+        width: 100%;
+        transform: translate(0,-20%); 
+        text-align: center;
+    }
+    .pattern.one{
+        display: none;
+        
+    }
+    .pattern.two{
+        display: none;
+    }
+}
