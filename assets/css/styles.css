@@ -97,6 +97,7 @@ span.decorated{
     background-color: var(--light-purple--);
     padding: 10rem 9.167rem;
 }
+
 .properties ul .prop >*{
     margin-bottom: 2rem;
     margin-top: 2rem;
