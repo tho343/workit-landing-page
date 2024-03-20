@@ -72,8 +72,6 @@ nav{
 .hero{
     border-radius: 0% 0% 80% 80%/0% 0% 20% 20%;
     position:relative;
-    overflow-y: visible;
-    overflow-x: clip;
 }
 
 .hero img.img-fluid{
@@ -91,7 +89,7 @@ img.pattern{
     width: 25%;
 }
 .pattern.two{
-    right: -40px;
+    right: 10px;
     width: 15%;
     bottom: 150px;
 }
