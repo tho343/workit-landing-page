@@ -112,7 +112,7 @@ span.decorated{
 }
 .properties{
     background-color: var(--light-purple--);
-    padding: 10rem 9.167rem;
+    padding: 20rem 9.167rem;
     clip-path: ellipse(127% 100% at 50% 0%);
     margin-top: -98px;
     z-index: -2;
@@ -192,7 +192,7 @@ footer{
 }
 @media screen and (max-width: 992px){
     .properties{
-        padding: 5rem 2rem;
+        padding: rem 2rem;
         clip-path: ellipse(200% 100% at 50% 0%);
     }
     .call-for-action{
@@ -221,7 +221,7 @@ footer{
         width: 50%;
     }
     .properties{
-        padding: 6.125rem;
+        padding: 12rem 5rem;
         clip-path: ellipse(200% 100% at 50% 0%);
     }
     .properties ul{
@@ -266,7 +266,7 @@ footer{
         clip-path: ellipse(200% 100% at 50% 0%);
     }
     .properties{
-        padding: 4.375rem 1rem;
+        padding: 12rem 1rem;
         clip-path: ellipse(200% 100% at 50% 0%);
     }
     .prop{
